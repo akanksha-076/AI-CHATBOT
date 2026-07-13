@@ -2,10 +2,10 @@ import os
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from google import genai
-from dotenv import load_model, load_dotenv  # Import the environment loader
+from dotenv import load_dotenv  # Import the environment loader
 
 # Load the keys from your hidden .env file into the system configuration
-load_dotenv()
+load_dotenv()  # NOT load_model()
 
 app = Flask(__name__)
 CORS(app)
@@ -24,7 +24,7 @@ def ask_bot():
             return jsonify({"response": "I didn't catch that. Please type something!"})
 
         response = client.models.generate_content(
-            model='gemini-2.5-flash',
+            model='gemini-flash-latest',
             contents=user_message,
         )
 
