@@ -27,7 +27,7 @@ function App() {
     setIsTyping(true); // Trigger loading animation module status
 
     try {
-      const response = await fetch("http://https://ai-chatbot-mktf.onrender.com/api/ask", {
+      const response = await fetch("https://ai-chatbot-mktf.onrender.com/api/ask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: userText }),
