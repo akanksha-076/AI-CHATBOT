@@ -8,7 +8,7 @@ from dotenv import load_dotenv  # Import the environment loader
 load_dotenv()  # NOT load_model()
 
 app = Flask(__name__)
-CORS(app, origins=["https://https://aiwebchatbot.netlify.app/"])
+CORS(app, origins=["https://aiwebchatbot.netlify.app"])
 
 # Fetch the hidden variable safely using os.environ
 api_key = os.environ.get("GEMINI_API_KEY")
