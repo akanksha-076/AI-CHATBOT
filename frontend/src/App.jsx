@@ -20,7 +20,6 @@ function App() {
 
   const sendMessage = async () => {
     if (!input.trim()) return;
-
     const userText = input;
     setMessages((prev) => [...prev, { text: userText, sender: "user" }]);
     setInput("");
