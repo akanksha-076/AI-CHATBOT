@@ -33,7 +33,7 @@ ai_web_chatbot/
 │
 ├── backend/
 │   ├── app.py              # Flask server gateway & API routing
-│   ├── .env                # Private credentials ( ignored by Git )
+│   ├── .env                # Private credentials (ignored by Git)
 │   └── .gitignore          # Rules for preventing sensitive data upload
 │
 ├── frontend/
